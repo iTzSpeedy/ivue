@@ -1,0 +1,72 @@
+﻿<addons>
+
+<addon id="plugin.video.tecboxivuewiz" name="Tecbox Ivue Wizard" version="0.0.4" provider-name="Tecbox">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.addon.common" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Tecbox Ivue Wizard</summary>
+    <description lang="en">Tecbox Ivue Wizard provides easy access to fixes and maintenance for Ivue Tv Guide</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.tvguidetecbox" name="iVue TV Guide" version="6.0.23" provider-name="TECBOX DreamHD">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.simplejson" version="2.0.10"/>
+	</requires>
+	<extension point="xbmc.python.script" library="addon.py"/>
+    <extension point="xbmc.service" library="service.py" start="login"/>
+	<extension point="xbmc.addon.metadata">
+		<description lang="en">iVue Guide allows you to combine some of your favourite live TV plugins for use with a fully working EPG</description>
+		<disclaimer lang="en">iVue Guide is based on FTV Guide by rayw1986 and Bluezed, which in turn is based on the original TV Guide addon by twinther.</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GPLv2</license>
+		<forum></forum>
+		<website></website>
+		<email></email>
+		<source></source>
+	</extension>
+</addon>
+
+<addon id="plugin.video.stalker" name="IPTV Stalker" version="1.0.18" provider-name="esxbr">
+    <requires>
+		<import addon="xbmc.python" version="2.14.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="server.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">IPTV Stalker</summary>
+		<description lang="en">IPTV Stalker</description>
+		<license>GNU General Public License, v2</license>
+		<language></language>
+		<forum>http://iptvtalk.org/showthread.php?2514-Kodi-Stalker-video-add-on-all-platforms</forum>
+		<source>https://github.com/esxbr/plugin.video.stalker</source>
+		<email>patrick.cabral@gmail.com</email>
+	</extension>
+</addon>
+
+<addon id="xbmc.repo.tecboxtvguide" name="iVue TV Guide Add-on" version="1.0.2" provider-name="DreamHD TECbox">
+	<extension point="xbmc.addon.repository" name="iVue TV Guide Add-ons Repository">
+		<info compressed="false">https://raw.githubusercontent.com/totaltec2014/ivuerepo/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/totaltec2014/ivuerepo/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/totaltec2014/ivuerepo/master/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Install iVue TV Guide </summary>
+		<description>Download and install for iVue Tv guide addons </description>
+		<disclaimer> Repo for iVue Tv guide addon </disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+</addons>
