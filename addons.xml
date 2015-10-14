@@ -1,5 +1,19 @@
 ﻿<addons>
 
+<addon id="script.iVueSkins" name="iVue Skins" version="1.0.1" provider-name="retrorat1">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">iVue Skins</summary>
+    <description lang="en">This is the place to find all Ivue TV Guide Skins Thanks to all of the authors of the code</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.stalker" name="IPTV Stalker" version="9.0.19" provider-name="esxbr">
     <requires>
 		<import addon="xbmc.python" version="2.14.0"/>
