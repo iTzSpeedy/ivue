@@ -1,53 +1,6 @@
 ﻿<addons>
 
-<addon id="script.iVueSkins" name="iVue Skins" version="1.0.1" provider-name="retrorat1">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">iVue Skins</summary>
-    <description lang="en">This is the place to find all Ivue TV Guide Skins Thanks to all of the authors of the code</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.video.stalker" name="IPTV Stalker" version="9.0.19" provider-name="esxbr">
-    <requires>
-		<import addon="xbmc.python" version="2.14.0"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="addon.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.service" library="server.py" start="startup" />
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary lang="en">IPTV Stalker-mod</summary>
-		<description lang="en">IPTV Stalker modified for NFPS, Rocket and IPTV66, AND iVue TV Guide</description>
-		<license>GNU General Public License, v2</license>
-		<language></language>
-		<forum>http://iptvtalk.org/showthread.php?7379-Modified-IPTV-Stalker-(9-0-18)-iVue-compatible / </forum>
-	</extension>
-</addon>
-
-<addon id="plugin.video.tecboxivuewiz" name="Tecbox Ivue Wizard" version="0.0.8" provider-name="Tecbox,rc">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.addon.common" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Tecbox Ivue Wizard</summary>
-    <description lang="en">Tecbox Ivue Wizard provides easy access to fixes and maintenance for Ivue Tv Guide</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="script.tvguidetecbox" name="iVue TV Guide" version="6.0.24" provider-name="TECBOX DreamHD">
+<addon id="script.tvguidetecbox" name="iVue TV Guide" version="6.0.25" provider-name="TECBOX DreamHD">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 		<import addon="script.module.simplejson" version="2.0.10"/>
